@@ -23,7 +23,8 @@ class Controller:
             is_running = self._is_not_quit(user_input)
         View.end_message()
 
-    def _is_input_valid(self, user_input):
+    @staticmethod
+    def _is_input_valid(user_input):
         """
             Checks if the input corresponds to a valid operation
 
@@ -40,6 +41,7 @@ class Controller:
 
             :param user_input: User input enter in the method run().
         """
+
         input_message = "Enter the expression to calculate"
         operation = View.get_user_input(input_message)
 
@@ -55,7 +57,8 @@ class Controller:
         View.print_result(operation, self.result)
         View.continue_message()
 
-    def _is_not_quit(self, user_input):
+    @staticmethod
+    def _is_not_quit(user_input):
         """
             Checks if the user asked to stop the script
 

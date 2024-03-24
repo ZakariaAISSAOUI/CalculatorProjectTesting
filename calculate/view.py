@@ -20,6 +20,7 @@ class View:
             :param input_message: Message insert into the input function.
             :return: The user input.
         """
+
         user_input = input(f"{input_message} : ")
         return user_input
 
@@ -45,6 +46,7 @@ class View:
             :param operation: The operation request by the user
             :param result: The result calculate by the script
         """
+
         if result is not None:
             print(f"RESULT : {operation} = {result}")
         else:
