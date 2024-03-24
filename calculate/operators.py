@@ -122,6 +122,7 @@ class Operators:
         """
             Makes the division calculation.
         """
+
         self.result = float(self.numbers[0])
         for i in range(1, len(self.numbers)):
             try:

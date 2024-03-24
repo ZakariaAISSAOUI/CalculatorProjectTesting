@@ -20,4 +20,4 @@ def test_random_subtraction():
 def test_invalid_subtraction():
     op = Operators()
     with pytest.raises(TypeError):
-        op.subtraction(7)
+        op.subtraction(3)

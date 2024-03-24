@@ -20,4 +20,4 @@ def test_random_multiplication():
 def test_invalid_multiplication():
     op = Operators()
     with pytest.raises(TypeError):
-        op.multiplication(5)
+        op.multiplication(2)
