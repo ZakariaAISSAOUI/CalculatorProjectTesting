@@ -2,7 +2,7 @@ from calculate.controller import Controller
 
 
 def test_run_addition(mocker):
-    expected_value = 20.
+    expected_value = 20.0
     sut = Controller()
 
     # Mocking user input
